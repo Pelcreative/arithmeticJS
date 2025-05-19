@@ -7,23 +7,231 @@
 </head>
 <body>
     <script>
-        let name = "Pelumi"
+    //     let name = "Hi Pelumi"
         
         
-       console.log(name);
+    //    alert(name);
     
-       let city = "Ibadan";
+    //    let city = "Ibadan";
 
-       let favouriteColour= "Purple";  //Camel Case //Snake Case best_food       
-       const pi = 3.142;
+    //    let favouriteColour= "Purple";  //Camel Case //Snake Case best_food       
+    //    const pi = 3.142;
 
-       let cloth = 200
-       let shoe= 500
-       let hat= 1000
-       let discount= 300
+    //    let cloth = 200
+    //    let shoe= 500
+    //    let hat= 1000
+    //    let discount= 300
 
-       let totalamount = cloth + shoe + hat - discount
-       console.log(totalamount)
+    //    let totalamount = cloth + shoe + hat - discount
+    //    console.log(totalamount)
+
+    //    let sentence = "pelumi love coffee";
+    //    let newsentence = sentence.replace( "love", "hate")
+    //    console.log(newsentence)
+
+    //    let price = 12.345;
+    //    console.log(price.toFixed(2))
+
+    //    //let score = 79.5;
+    //    //console.log(score.round())
+
+
+    //    let isStudent = false;
+    //    let hasPaid = true;
+
+    //    if( isStudent === true && hasPaid === false){
+    //     console.log("you can enter the exam hall")
+    //    } else{
+    //     console.log("you can't enter")
+    //    }
+
+    //    let colours = ["Blue", "Yellow", "Green" ]
+    //    console.log(colours[2])
+
+    //    let favFood = ["Rice", "Suya", "Semo", "poundo"]
+    //    console.log(favFood[0])
+    //    console.log(favFood[3])
+
+
+
+    //    const person = {
+    //     name: "John", 
+    //     age: 20,
+    //     phone: "1234567892", 
+    //     email: "john@gmail.com",
+    //     isSubscribed: true,
+    //    }
+    //    person.name = "Majek"
+    //    person.city = "Ibadan"
+    //    delete person.age
+    //    console.log(person)
+
+
+    
+    // const student = {
+    //     name: "Brian",
+    //     age: 15,
+    //     score: 75,
+    // }
+    // console.log("Hello " + student.name)
+    // console.log(student)
+
+    let person = new Map([
+        ["name", "john"],
+        ["age", "13"],
+    ])
+    person.delete("name")
+
+  //  person.clear()
+    // console.log(person)
+
+     let colours = ["blue","red", "pink", "yellow","greem"];
+     //let result = colours.splice(1, 2)
+     //console.log(colours.include("yellow"))
+
+
+     let A = ['blue', 'green', 'red']
+     let B=  ['yellow', 'indigo', 'gray']
+     let merge = A.concat(B)
+
+    //  console.log(merge)
+     
+    // let Ac = ['blue', 'green', 'red']
+    // console.log(Ac.join("-"))
+
+    // let number = [4,3,5,6,2,7,1]
+    // console.log(number.find((x)=> x > 2))
+
+    // let num = [4,3,5,6,2,7,1]
+    // console.log(num.filter((x)=> x > 2))
+
+    // let value = [4,3,5,6,2,7,1]
+    // console.log(value.map((x)=> x > 2))
+
+    // let n = [4,3,5,6,2,7,1]
+    // console.log(n.filter((x)=> x % 2 == 0)) //if it is even number ===, if it's odd number no equal to "!="
+
+    // let Z = [4,5,3,6,8]
+    // console.log(Z.toString("Z"))
+    // console.log(Z)
+
+
+    let age=18
+
+    if(age >=30){
+        console.log("Adult")
+    }
+    else {
+        console.log("minor")
+    }
+
+
+    // let Bola = "female"
+    // if (Bola = "male"){
+    //     console.log("login")
+    // }
+    // else  {
+    //     console.log("not accesible")
+    // }
+
+    let totalScore = 55
+    if (totalScore >= 70){
+        console.log("A")
+    }
+    else if (totalScore >= 60){
+        console.log("B")
+    }
+    else if (totalScore >= 50){
+        console.log("C")
+    }
+    else if (totalScore >= 45){
+        console.log("D")
+    }
+    else {
+        console.log("Fail")
+    }
+
+
+    let day = "tuesday";
+    switch (day) {
+        case "monday" :
+               console.log("start a new week");
+                break;
+            case "friday":
+                console.log("weekend is near")
+                break;
+            case "wednesday":
+                console.log("Mid-week")
+                break;
+            default:
+                console.log("Just Another day")
+
+                
+    }
+
+
+    let light = "Yellow"
+     switch (light) {
+        case "Green":
+            alert("GO")
+            break;
+        case "Yellow":
+            alert("GET READY")
+            break;
+        case "Red":
+            alert("STOP")
+            break;
+        default:
+            alert("Error")
+     }
+
+     let Age = 28;
+     let message = age >= 18 ? "Adult" : "minor";
+     console.log(message)
+
+
+     let num = 28;
+     let value= num >= 18 ? "even" : "odd";
+     console.log(value)
+
+     function greet() {
+        console.log("Hello World")
+       }
+       greet();
+
+     function greet(name) {
+        console.log("Hello " + name)
+       }
+       greet("John");
+
+       function add(a,b) {
+        return a + b
+       }
+       console.log(add(1, 2))
+
+        //function Mini(a,b) => a + b        //Arrow functions
+       // console.log(Mini(4, 2))
+
+       setTimeout(() => {
+        console.log("Hello World")
+       }, 10000)
+       
+
+       function square(a){
+        return a * a
+       }
+       console.log(square(4))
+
+
+       function findNumber(a) {
+        if (a % 2 === 0){
+            console.log(a + " is a even number")
+        }
+        else {
+            console.log(a + " is a even number")
+        }
+       }
+       findNumber(2)
 
     </script>
 </body>

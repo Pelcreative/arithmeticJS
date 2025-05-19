@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice.html</title>
+</head>
+<body>
+    <script>
+        alert("Hello World")
+
+        let name = "John"
+        console.log(name)
+
+        let     CITY = "ibadan"
+        console.log(CITY)
+
+        let favouriteColour = "PURPLE"
+        console.log(favouriteColour)
+
+        const pi = 3.14
+        console.log(pi)
+
+        let numn = "JOHN"
+        console.log(numn.length)
+
+        let sentence = "I love tea"
+        let newsentence = sentence.replace("tea", "coffee")
+        console.log(newsentence)
+
+        let isStudent = true
+        let hasPaid = false
+
+        if (isStudent === true || hasPaid === false) {
+            console.log("you can enter the exam hall")
+        }
+        else {console.log("you can not enter")}
+
+        console.log(parseInt("Hello123"))
+        console.log(!(10<20))
+        console.log(false || 5>2)
+
+        let food = ["eba", "semo","iyan", "wheat"]
+        //food[1] = "wheat"
+        food = "pouuuuuuuu" //replace
+        console.log(food[0], [3])
+
+        const person = {
+            name:"John",
+            age: 25,
+            phone: "+234-805-3435-5462",
+            email: "pelumiakin@gmail.com",
+            isSunscribe: true,
+        }
+        person.name = "mike"
+        delete person.ages
+        console.log(person)
+
+        let student = {
+            namee: "pelumi",
+            agee: 13,
+            score: 78,
+        }
+        console.log("hello " + student.namee)
+        console.log(student)
+
+        //JSON is wrapped in qoute/string "namee" = "pelumi"
+                    
+        
+
+        let colour = ["green", "indigo", "purple", "lemon"]
+        const result = colour.slice(1, 3) //slice remove the last entity of a variable
+        console.log(result)
+
+         let fruit = ["orange", "lemon", "lime"]
+         const results= fruit.splice (1,2)  //splice add every thing declear
+        console.log(results)
+
+        let fruitt = ["orange", "lemon", "lime"]
+         console.log(fruitt.indexOf(1))
+
+         let fruitttt = ["orange", "lemon", "lime"]
+         console.log(fruitt.includes("Lime")) //include can be like askin js question ttrue or false but for lime it's false cause it case sensitive
+
+
+     
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

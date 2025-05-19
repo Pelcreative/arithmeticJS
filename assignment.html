@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <script>
+                           // SECTION A
+
+        // QUESTION 1 
+       // .push(), add element to the back of the existing variable
+
+       // example 
+        let food = ["iyan", "semo", "rice", "bean"]
+        food.push("spag")
+        console.log(food)
+
+        //.pop(), remove the last element of the Array
+        //example
+        let fruit = ["orange", "lemon", "lime"]
+        fruit.pop("lime")
+        console.log(fruit)
+
+        //Question 2
+        //Example
+        let number = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+        console.log(number.filter((x) => x % 2 === 0))
+
+
+        //Question 3
+        // the `find()` method works with the first match in a variable; if a statement is being decleared, 
+        // the first element the declearation affect would only show
+        //Example
+        let numberr = [5,6,7,8,9,2]
+        console.log(numberr.find((x) => x < 6))
+
+                        // SECTION B
+        //Question 1
+        // "IF" works when the condition or code is true
+        // "Else" works when the condition or code is false
+        // "Else if" it is use for multiple conditions
+        // Example
+        let age=18
+
+        if(age >= 19){
+        console.log("Accessible")
+        }
+        else {
+        console.log("Not-accessible")
+        }
+
+        //Question 2
+        let x = 30
+
+        if (x = 30){
+            console.log(x + " is a positive number")
+        }
+        else {
+            console.log(x + "is a negative number")
+        }
+
+        //Question 3
+        // Switched statement are statement used to check for excat values in multiple conditions
+        // Example
+        let day = "saturday";
+        switch (day) {
+        case "monday" :
+               console.log("new beginning");
+                break;
+            case "friday":
+                console.log("TGIF")
+                break;
+            case "wednesday":
+                console.log("Joy is coming soon")
+                break;
+            default:
+                console.log("other days are for partying")
+        }
+
+        //Question 4
+        // == means "Equal to"
+        // === use for "Even number"
+        // != means "not Equal to"
+        // > means "greater than"
+        // < means "less than"
+
+        //Question 5
+        let totalScore = 42
+        let grade = totalScore >= 20 ? "pass" : "fail";
+        console.log(grade)
+    
+    
+                          // SECTION C
+        //Question 1
+        //In JavaScript, a function is a block of code that can be executed multiple times 
+        // from different parts of a program
+        // In my own term, function in JS is reusable code that can be run many times
+        // from different places in a program.
+
+
+        //Question 2
+        function greetUser(name) {
+        console.log("Hello Handsome!")
+        }
+         greetUser(name);
+
+
+         //Question 3
+        function multiply(a,b) {
+        return a * b
+       }
+       console.log(multiply(5, 7)) 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+     
+    </script>
+</body>
+</html>
